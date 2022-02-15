@@ -35,9 +35,9 @@ function recursionBinarySearch(arr, number, start, end) {
     return middle;
   }
   if (number > arr[middle]) {
-    return recursionBinarySearch(arr, number, middle + 1, arr.length);
+    return recursionBinarySearch(arr, number, middle, arr.length);
   } else if (number < arr[middle]) {
-    return recursionBinarySearch(arr, number, 0, middle - 1);
+    return recursionBinarySearch(arr, number, 0, middle);
   }
 }
 
